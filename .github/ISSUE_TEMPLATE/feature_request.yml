@@ -1,0 +1,22 @@
+name: Feature or balance proposal / Wunsch
+description: Suggest a feature or expert-progression improvement
+title: "[IDEA] "
+labels: ["type:enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Wunsch
+      description: Describe the inconvenience, production bottleneck, or story opportunity
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution / Vorschlag
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact on solo, co-op, Pipster or performance

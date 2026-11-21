@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Grandma's Cookie concept artwork: grandmother's cottage before an absurd mechanical bakery">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#203344"/><stop offset="1" stop-color="#58656b"/></linearGradient><linearGradient id="cookie" x2="1" y2="1"><stop stop-color="#f7d28b"/><stop offset="1" stop-color="#ac663b"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<path d="M0 680Q270 540 500 660T950 615T1600 650V900H0Z" fill="#354e45"/>
+<g fill="#33444c" stroke="#6e8791" stroke-width="12"><rect x="570" y="250" width="260" height="410"/><rect x="950" y="180" width="260" height="465"/><rect x="1260" y="290" width="260" height="365"/></g>
+<g fill="#1c3039" stroke="#a58453" stroke-width="17"><rect x="650" y="120" width="65" height="490"/><rect x="1050" y="100" width="60" height="520"/><path d="M600 430h850M730 570h760M700 310h430" fill="none"/></g>
+<g fill="#dcb57c" stroke="#6b4839" stroke-width="14"><path d="M100 570h400v230H100Z"/><path d="M80 572l216-195 220 195Z"/><rect x="249" y="646" width="86" height="154" fill="#5b4039"/><rect x="135" y="618" width="72" height="76" fill="#a7c3b6"/><rect x="387" y="617" width="73" height="77" fill="#a7c3b6"/></g>
+<circle cx="1368" cy="164" r="116" fill="url(#cookie)" stroke="#e7c48b" stroke-width="11"/><g fill="#684636"><circle cx="1320" cy="131" r="20"/><circle cx="1400" cy="133" r="22"/><circle cx="1356" cy="202" r="25"/><circle cx="1428" cy="207" r="13"/></g>
+<rect x="50" y="45" width="1050" height="198" rx="22" fill="#1d242b" opacity="0.86"/>
+<text x="84" y="143" font-family="sans-serif" font-size="78" font-weight="900" fill="#ffedd0" letter-spacing="6">GRANDMA'S COOKIE</text><text x="87" y="196" font-family="sans-serif" font-size="34" letter-spacing="3" fill="#c8b08a">THE INDUSTRIAL COOKIE INCIDENT</text>
+<text x="63" y="860" font-family="sans-serif" font-size="23" fill="#e9d2ad">CONCEPT ART · NOT AN IN-GAME SCREENSHOT</text>
+</svg>

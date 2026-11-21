@@ -1,0 +1,23 @@
+name: Mod compatibility / Mod-Kompatibilität
+description: Report a version, dependency, licensing or distribution issue
+title: "[COMPAT] "
+labels: ["type:compat", "needs-test"]
+body:
+  - type: input
+    id: mod
+    attributes:
+      label: Mod name and official source URL
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: Exact file/version and loader
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Compatibility problem, reproduction and source
+    validations:
+      required: true

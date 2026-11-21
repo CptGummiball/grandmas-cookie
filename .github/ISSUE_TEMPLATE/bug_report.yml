@@ -1,0 +1,39 @@
+name: Bug report / Fehlerbericht
+description: Report a reproducible gameplay, quest, server, or client bug
+title: "[BUG] "
+labels: ["type:bug", "needs-test"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please remove private IPs, player names, access tokens and passwords from logs. / Logs vor dem Upload anonymisieren."
+  - type: input
+    id: version
+    attributes:
+      label: Pack / MC / NeoForge / Java version
+      placeholder: "e.g. v0.1.0-alpha / 1.21.1 / 21.1.x / Java 21"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options: ["Singleplayer", "Multiplayer client", "Dedicated server", "Quest/translation", "Other"]
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Reproduktion
+      placeholder: "1. ... 2. ... 3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs observed / Erwartet vs tatsächlich
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Screenshots (sanitized)

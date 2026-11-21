@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.2.0",
+  "model_type": "entity",
+  "preset_type": "humanoid_still",
+  "version": "grandma-v2",
+  "dimensions": {
+    "width": 0.7,
+    "height": 1.7,
+    "eye_height": 1.37
+  }
+}

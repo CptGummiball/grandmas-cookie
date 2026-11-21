@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.2.0",
+  "preset_type": "humanoid_still",
+  "version": "grandma-v2",
+  "model": "oma_core:easy_model_entities/models/grandma",
+  "texture": "oma_core:textures/entity/grandma_model.png",
+  "rendering": {
+    "scale": 1.0,
+    "shadow_radius": 0.4
+  },
+  "animation": {
+    "mode": "automatic",
+    "idle_strength": 0.6
+  }
+}

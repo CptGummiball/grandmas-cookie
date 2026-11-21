@@ -1,0 +1,32 @@
+// Minecraft-free logic. Must not import net.minecraft / net.neoforged (checked by noMinecraftImports).
+apply plugin: 'java-library'
+
+dependencies {
+    testImplementation platform("org.junit:junit-bom:${junit_version}")
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ['-Xlint:all,-serial', '-Werror']
+}
+
+test {
+    useJUnitPlatform()
+    testLogging { events 'failed'; exceptionFormat 'full' }
+}
+
+tasks.register('noMinecraftImports') {
+    group = 'verification'
+    description = 'Fails if core sources import Minecraft or NeoForge classes'
+    def srcDir = file('src/main/java')
+    doLast {
+        def offenders = []
+        srcDir.eachFileRecurse { f ->
+            if (f.name.endsWith('.java') && (f.text =~ /(?m)^import\s+(net\.minecraft|net\.neoforged|com\.mojang)\./)) offenders << f.name
+        }
+        if (offenders) throw new GradleException("Minecraft imports in core: ${offenders}")
+        logger.lifecycle('noMinecraftImports: OK')
+    }
+}
+check.dependsOn 'noMinecraftImports'

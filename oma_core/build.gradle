@@ -1,0 +1,17 @@
+subprojects {
+    apply plugin: 'java'
+    group = mod_group
+    version = mod_version
+
+    java { toolchain { languageVersion = JavaLanguageVersion.of(21) } }
+    repositories { mavenCentral() }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+        options.release = 21
+    }
+    tasks.withType(Jar).configureEach {
+        preserveFileTimestamps = false
+        reproducibleFileOrder = true
+    }
+}

@@ -1,0 +1,11 @@
+// oma_core: NeoForge 1.21.1 companion mod of Grandma's Cookie.
+// core     = Minecraft-free Java 21 logic with unit tests (compiled into the mod from source)
+// neoforge = the mod itself, built with the official NeoForge ModDevGradle plugin
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://maven.neoforged.net/releases' }
+    }
+}
+rootProject.name = 'oma_core'
+include 'core', 'neoforge'

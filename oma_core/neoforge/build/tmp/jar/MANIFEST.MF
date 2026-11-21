@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: Oma Core
+Implementation-Version: 0.1.0+mc1.21.1-neoforge
+Implementation-Vendor: cptgummiball
+

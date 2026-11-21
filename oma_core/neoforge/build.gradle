@@ -1,0 +1,70 @@
+plugins {
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+base { archivesName = mod_id }
+
+repositories {
+    // Official FTB maven (same source as scripts/fetch_mods.py): FTB Teams API, compile-only.
+    maven { url = 'https://maven.ftb.dev/releases' }
+}
+
+dependencies {
+    compileOnly("dev.ftb.mods:ftb-teams-neoforge:${ftb_teams_version}") { transitive = false }
+}
+version = "${mod_version}+mc${minecraft_version}-neoforge"
+
+// The Minecraft-free core is compiled into this jar from source (no jar-in-jar, no shading).
+sourceSets.main.java.srcDir project(':core').file('src/main/java')
+
+neoForge {
+    version = neoforge_version
+    runs {
+        // Dev runs only. EULA acceptance stays with the owner; Claude never writes eula.txt.
+        client { client(); gameDirectory = file('run/client') }
+        server { server(); gameDirectory = file('run/server'); programArgument '--nogui' }
+    }
+    mods {
+        oma_core { sourceSet sourceSets.main }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ['-Xlint:deprecation,unchecked']
+}
+
+processResources {
+    from(rootProject.file('../LICENSE')) { into 'META-INF' }
+    def props = [version          : project.version, minecraft_range: minecraft_range,
+                 neoforge_range   : neoforge_range, mod_author: mod_author, mod_name: mod_name]
+    inputs.properties props
+    filesMatching('META-INF/neoforge.mods.toml') { expand props }
+}
+
+jar {
+    manifest.attributes('Implementation-Title': mod_name, 'Implementation-Version': project.version,
+            'Implementation-Vendor': mod_author)
+}
+
+// Dedicated-server safety: classes outside a ".client." package must not reference net.minecraft.client.
+tasks.register('checkNoClientRefs') {
+    group = 'verification'
+    description = 'Fails if server-side classes reference net.minecraft.client'
+    dependsOn 'classes'
+    def dirs = provider { sourceSets.main.output.classesDirs.files }
+    doLast {
+        def offenders = []
+        dirs.get().each { dir ->
+            if (!dir.exists()) return
+            dir.eachFileRecurse { f ->
+                if (!f.name.endsWith('.class')) return
+                def rel = dir.toPath().relativize(f.toPath()).toString().replace(File.separatorChar, '/' as char)
+                if (rel.contains('/client/')) return
+                if (new String(f.bytes, 'ISO-8859-1').contains('net/minecraft/client/')) offenders << rel
+            }
+        }
+        if (offenders) throw new GradleException("Client references in server classes: ${offenders}")
+        logger.lifecycle('checkNoClientRefs: OK')
+    }
+}
+check.dependsOn 'checkNoClientRefs'

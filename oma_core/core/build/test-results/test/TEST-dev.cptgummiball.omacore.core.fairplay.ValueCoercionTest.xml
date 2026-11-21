@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.cptgummiball.omacore.core.fairplay.ValueCoercionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-21T17:07:26.779Z" hostname="ERIK" time="0.003">
+  <properties/>
+  <testcase name="coercesToThePrototypeType()" classname="dev.cptgummiball.omacore.core.fairplay.ValueCoercionTest" time="0.002"/>
+  <testcase name="displaysEnumsByName()" classname="dev.cptgummiball.omacore.core.fairplay.ValueCoercionTest" time="0.0"/>
+  <testcase name="rejectsWrongOrUnsupportedValues()" classname="dev.cptgummiball.omacore.core.fairplay.ValueCoercionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

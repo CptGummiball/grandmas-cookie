@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.cptgummiball.omacore.core.house.HouseCoreTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-21T17:07:26.795Z" hostname="ERIK" time="0.019">
+  <properties/>
+  <testcase name="keepCellsAreNotPlaced()" classname="dev.cptgummiball.omacore.core.house.HouseCoreTest" time="0.002"/>
+  <testcase name="paletteAlternativesKeepOrderAndIgnoreBlanks()" classname="dev.cptgummiball.omacore.core.house.HouseCoreTest" time="0.001"/>
+  <testcase name="houseAreaIncludesMargin()" classname="dev.cptgummiball.omacore.core.house.HouseCoreTest" time="0.001"/>
+  <testcase name="parserRejectsBrokenPlans()" classname="dev.cptgummiball.omacore.core.house.HouseCoreTest" time="0.005"/>
+  <testcase name="shippedCottageParsesWithMarkersInsideTheHouse()" classname="dev.cptgummiball.omacore.core.house.HouseCoreTest" time="0.003"/>
+  <testcase name="structureCellsAreTheHousesOwnBlocksOnly()" classname="dev.cptgummiball.omacore.core.house.HouseCoreTest" time="0.001"/>
+  <testcase name="sitePickerPrefersDryFlatLandNearSpawn()" classname="dev.cptgummiball.omacore.core.house.HouseCoreTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

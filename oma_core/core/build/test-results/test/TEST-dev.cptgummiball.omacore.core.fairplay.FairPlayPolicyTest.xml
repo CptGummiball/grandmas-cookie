@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.cptgummiball.omacore.core.fairplay.FairPlayPolicyTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-21T17:07:26.763Z" hostname="ERIK" time="0.016">
+  <properties/>
+  <testcase name="rejectsMalformedSideAndDuplicates()" classname="dev.cptgummiball.omacore.core.fairplay.FairPlayPolicyTest" time="0.009"/>
+  <testcase name="modDefaultStartupAndSpacedPathsParse()" classname="dev.cptgummiball.omacore.core.fairplay.FairPlayPolicyTest" time="0.002"/>
+  <testcase name="lanCheatsAreRevokedOnlyInCheatFreeSingleplayerWorlds()" classname="dev.cptgummiball.omacore.core.fairplay.FairPlayPolicyTest" time="0.0"/>
+  <testcase name="textValuesAreComparedExactly()" classname="dev.cptgummiball.omacore.core.fairplay.FairPlayPolicyTest" time="0.001"/>
+  <testcase name="singleplayerWithoutCheatsAlwaysEnforcesEvenIfDedicatedSwitchIsOff()" classname="dev.cptgummiball.omacore.core.fairplay.FairPlayPolicyTest" time="0.0"/>
+  <testcase name="operatorLevelIsTwo()" classname="dev.cptgummiball.omacore.core.fairplay.FairPlayPolicyTest" time="0.001"/>
+  <testcase name="parsesTableAndReportsOnlyRealViolations()" classname="dev.cptgummiball.omacore.core.fairplay.FairPlayPolicyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

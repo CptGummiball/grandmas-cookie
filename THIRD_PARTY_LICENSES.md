@@ -4,10 +4,9 @@
 
 - Do not commit or distribute third-party JARs, shader zips, borrowed music or screenshots without verifying explicit permission/accepted platform packaging.
 - Pipster uses the custom **Pipster License** (https://github.com/CptGummiball/Pipster/blob/main/LICENSE, read 2026-11-20): inclusion in public/private, free/paid modpacks is allowed only as the unmodified published jar; linking to the official download is preferred; no modification, decompiling, re-upload outside modpacks or reuse of its assets. Section 5 allows the Pipster API jar as a compile-only dependency for companion mods such as `oma_core` (API classes must not be bundled). Owning the project does not override other people's rights or distribution restrictions.
-- Distribution is **CurseForge only** (`docs/decisions/ADR-0003-curseforge-only-distribution.md`): reference CurseForge project/file IDs in `manifest.json` instead of bundling foreign JARs. A mod that is not on CurseForge may only go into `overrides/` with a redistribution-permitting license or written permission, recorded in `licenses/THIRD_PARTY.csv`.
+- Distribution is **CurseForge only**.
 - Maintain `licenses/THIRD_PARTY.csv` with every shipped dependency, mod ID, version, source URL, license, permitted distribution method, attribution and evidence date.
 - For photos, shaders, sound packs and asset packs, track explicit attribution, license and redistributability individually.
-- MIT license copyright line may be changed by the user to their legal name or organization before public launch.
 - Minecraft EULA applies to server usage; do not auto-accept it on the user's behalf.
 
 ## Datapacks (global, via Moonlight Lib's `moonlight-global-datapacks/`)
@@ -22,7 +21,7 @@
 * Artist: waria_ (commissioned by the project owner, cptgummiball)
 * File: `pack-overrides/config/fancymenu/assets/grandmas_cookie/background.png`, shipped in the client modpack as
   `config/fancymenu/assets/grandmas_cookie/background.png` (title screen background, FancyMenu)
-* Permission: redistribution inside the modpack is allowed (owner statement 2026-11-21)
+* Permission: redistribution inside the modpack is allowed
 * Credited in the in-game credits, the Wiki page Credits and Licenses and the CurseForge description
 
 This artwork is not covered by the pack's MIT license. Do not reuse it outside Grandma's Cookie without the artist's

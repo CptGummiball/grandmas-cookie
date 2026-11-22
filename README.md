@@ -5,9 +5,7 @@
 
   *She only wants one cookie. You will need a factory.*
 
-  **🚧 Alpha – in active development, no public download yet.**
-
-  [Deutsch](#deutsch--omas-keks) · [Wiki](wiki-source/Home.md) · [Status](docs/STATUS.md) · [License](LICENSE)
+  [Deutsch](#deutsch--omas-keks) · [Wiki](wiki-source/Home.md) · [License](LICENSE)
 </div>
 
 ## The story
@@ -57,15 +55,12 @@ a reactor, a rift and a pile of stamped case files. Then you hand over **THE COO
 | Recipes, cookie chain, certificates | Built (KubeJS); verified on a dedicated server |
 | Grandma, cottage, rejoin flow, credits | Built in the companion mod `oma_core`; verified on a dedicated server |
 | Dedicated server | Boots with the full mod set; setup scripts in [`server/`](server/README.md) |
-| Public release | **Not yet.** Published only on CurseForge once all release gates are met |
-
-Details and evidence: [`docs/STATUS.md`](docs/STATUS.md). Roadmap: [`docs/IMPLEMENTATION_BACKLOG.md`](docs/IMPLEMENTATION_BACKLOG.md).
+| Public release | [Curseforge](https://www.curseforge.com/minecraft/modpacks/grandmas-cookie/) |
 
 ## Links
 
 - Player guide: [Wiki](wiki-source/Home.md) (source pages; the GitHub Wiki is filled from them)
 - [Credits and licences](THIRD_PARTY_LICENSES.md) · [Pipster on Modrinth](https://modrinth.com/mod/pipster)
-- For contributors: [`CONTRIBUTING.md`](CONTRIBUTING.md), [`docs/`](docs/), publication steps in [`Publish.md`](Publish.md)
 
 ---
 
@@ -91,7 +86,7 @@ Persönlich.
   zusätzliche deutsche Übersetzungen für die Mods, Teams mit gemeinsamem Fortschritt, eigener Serverpaket-Download
   und ein Abspann nach der Keksübergabe.
 
-**Stand:** Alpha in Entwicklung, noch kein öffentlicher Download. Veröffentlicht wird ausschließlich auf CurseForge.
+**Stand:** Frühe Version 0.1.0 vollständig spielbar
 
 ---
 
